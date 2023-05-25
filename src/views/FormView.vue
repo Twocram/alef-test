@@ -4,7 +4,7 @@
 
     <div class="children-container">
       <div class="children-top">
-        <div class="caption">Дети (макс. 5)</div>
+        <div class="children-top__caption">Дети (макс. 5)</div>
         <div class="add-btn" v-if="children.length < 5" @click="addChildren">
           <PlusComponent class="plus-icon" />
           <span class="add-btn__caption">Добавить ребенка</span>
@@ -65,12 +65,11 @@ export default {
 </script>
 
 <style scoped>
-.caption {
+.children-top__caption {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #111111;
-  margin-bottom: 20px;
 }
 
 .children-top {
